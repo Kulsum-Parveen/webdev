@@ -1,0 +1,170 @@
+/* body{
+    margin: 0px;
+}
+.navbar ol{
+    list-style-type:none ;
+    background-color: rgb(114, 114, 231);
+    padding:0px;
+    margin: 4px;
+    overflow: hidden;
+
+} 
+.navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+}
+.navbar a:hover{
+    background-color:blueviolet;
+}
+.navbar li{
+
+    float:left;
+}
+img{
+    display:block;
+    margin: auto;
+    
+}/* Basic Styles */ 
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar styling using Flexbox */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ol {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #15abe1;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Section Titles */
+h1, h3, h4 {
+    text-align: center;
+    color: #444;
+    padding: 10px;
+    background-color: bisque;
+    margin-bottom: 20px;
+}
+
+/* Topics List */
+ul.topic-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+ul.topic-list li {
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.topic-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul.topic-list li a:hover {
+    color: #ff6600;
+}
+
+/* About Section Styling */
+#about {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#about ul {
+    list-style-type: none;
+}
+
+#about li {
+    padding: 5px 0;
+}
+
+/* Contact Section Styling */
+#contact {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+/* Go to Top Link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 30px auto;
+}
+
+a:hover {
+    background-color: #e55d00;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topic-list {
+        grid-template-columns: 1fr;
+    }
+}
