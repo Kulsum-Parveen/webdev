@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Toggle Light Bulb</title>
+    </head>
+    <body>
+        <img id="image" src="bulboff.jpg"  width="100px">
+        <button id="toggleButton" onclick="handleLight()"> Turn on</button>
+
+      <script>
+        const handleLight =() => {
+            const img = document.getElementById('image');
+            const button = document.getElementById('toggleButton');
+
+            if(img.src.includes('bulboff.jpg')) {
+                img.src ='bulbon.jpg';
+                button.innerText =' Turn Off';
+            }else {
+                img.src ='bulboff.jpg';
+                button.innerText =' Turn On';   
+            }
+        }
+      </script>  
+    </body>
+</html>
